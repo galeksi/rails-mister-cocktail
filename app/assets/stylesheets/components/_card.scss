@@ -1,0 +1,56 @@
+.cards {
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-cocktail {
+  border: 2px solid $orange;
+  border-radius: 4px;
+  height: 100px;
+  background: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+.card-detail {
+  text-align: center;
+  border: 2px solid $orange;
+  border-radius: 4px;
+  width: 600px;
+  padding: 24px;
+  margin: 20px auto;
+  background: $green;
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    padding-bottom: 20px;
+  }
+}
+
+.card-form {
+  text-align: center;
+  border: 2px solid $orange;
+  border-radius: 4px;
+  width: 600px;
+  padding: 24px;
+  margin: 20px auto;
+  background: $green;
+  h1 {
+    padding-bottom: 20px;
+  }
+}

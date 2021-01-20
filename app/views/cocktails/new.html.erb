@@ -1,5 +1,13 @@
-<h1>Create new Cocktail</h1>
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "Create cocktail" %>
-<% end %>
+<nav class="navbar navbar-light navigation-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand"><i class="fas fa-cocktail"></i> Dr. Drinx</a>
+    <%= link_to "Back", cocktails_path, class: 'btn btn-outline-warning' %>
+  </div>
+</nav>
+<div class="card-form">
+  <h1>Create new Cocktail</h1>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Create cocktail", class: 'btn btn-outline-warning' %>
+  <% end %>
+</div>

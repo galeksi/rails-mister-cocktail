@@ -1,7 +1,19 @@
-<h1>All Cocktails</h1>
-<% @cocktails.each do |cocktail| %>
-  <div class="cocktail_card">
-    <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+<nav class="navbar navbar-light navigation-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand"><i class="fas fa-cocktail"></i> Dr. Drinx</a>
+    <%= link_to "Create new", new_cocktail_path, class: ' btn btn-outline-warning' %>
   </div>
-<% end %>
-<%= link_to "Create new", new_cocktail_path %>
+</nav>
+<div class="banner mb-5">
+  <div class="container">
+    <h1>All drinks</h1>
+  </div>
+</div>
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-cocktail">
+      <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+    </div>
+  <% end %>
+</div>
+
