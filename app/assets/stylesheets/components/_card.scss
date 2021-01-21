@@ -1,15 +1,17 @@
 .cards {
-  width: 800px;
+  width: 798px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 24px;
+  padding-bottom: 24px;
 }
 
 .card-cocktail {
   border: 2px solid $orange;
   border-radius: 4px;
-  height: 100px;
+  height: 250px;
+  width: 250px;
   background: $green;
   display: flex;
   justify-content: center;
